@@ -10,7 +10,7 @@ const NewsCarousel = () => (
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/1400x800.png?text=Awaiting+images"
+                src="https://via.placeholder.com/1400x500.png?text=Awaiting+images"
                 alt="Third slide"
             />
 

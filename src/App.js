@@ -6,9 +6,7 @@ import Footer from './components/footer/footer.component';
 
 const App = () => (
   <div>
-    <nav>
-      <NavMenu />
-    </nav>
+    <NavMenu />
     <HomePage />
     <footer>
       <Footer/>
