@@ -3,7 +3,7 @@ import React from 'react';
 // import Navbar from 'react-bootstrap/Navbar';
 // import Nav from 'react-bootstrap/Nav';
 
-import './nav-menu.style.css';
+import './nav-menu.style.scss';
 
 const NavMenu = () => (
     // <Navbar className="shadow" bg="light" expand="lg" fixed="top">
@@ -39,8 +39,9 @@ const NavMenu = () => (
         <nav>
             <input type="checkbox" id="nav-toggle"/>
             <label for="nav-toggle" className="burger-menu">
-                XXX
+                <span className="burger-icon">&nbsp;</span>
             </label>
+            
             <div className="left-menu">
                 <a href="#s">Paslaugos</a>
                 <a href="#b">Nuoma</a>
