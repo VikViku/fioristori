@@ -1,16 +1,14 @@
 import './App.scss';
 
-import NavMenu from './components/nav-menu/nav-menu.component';
+import NavMenu from './layouts/nav-menu/nav-menu.component';
 import HomePage from './pages/Home/Homepage.component';
-import Footer from './components/footer/footer.component';
+import Footer from './layouts/footer/footer.component';
 
 const App = () => (
-  <div>
+  <div className='App'>
     <NavMenu />
     <HomePage />
-    <footer>
-      <Footer/>
-    </footer>
+    <Footer/>
   </div>
 );
 

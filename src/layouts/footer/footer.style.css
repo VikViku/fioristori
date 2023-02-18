@@ -1,4 +1,4 @@
-.footer {
+footer {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 30% 30%;;
@@ -6,11 +6,11 @@
     padding: 20px 15px 20px 15px;
     justify-content: end;
     overflow: hidden;
-    background-color: #252525;
+    background-color: #cccccc;
 }
 
 .footer-widget h3 {
-    color: #fff;
+    color: #000;
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: 600;
@@ -21,7 +21,7 @@
 }
 
 .footer-widget ul li span {
-    color: #fff;
+    color: #000;
 }
 
 .contact-block {
@@ -29,7 +29,7 @@
 }
 
 .contact-block ul li span {
-    color: rgba(255, 255, 255, 0.7);
+    color: #000;
 }
 
 .contact-block ul li {
@@ -42,7 +42,7 @@
     width: 40px;
     font-size: 18px;
     padding-top: 2px;
-    color: #fff;
+    color: #000;
 }
 
 .contact-block ul li .svg-inline--fa,
