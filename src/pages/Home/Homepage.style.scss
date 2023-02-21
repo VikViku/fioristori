@@ -1,6 +1,6 @@
 main {
     display: grid;
-    grid-template-rows: repeat(8, min-content);
+    grid-template-rows: repeat(auto-fit, min-content);
     justify-items: center;
 }
 
@@ -15,12 +15,14 @@ section {
 .item-holder {
     display: grid;
     grid-template-columns: 1fr min-content;
-    gap: 5rem;
+    gap: 1rem;
     align-items: center;
     justify-items: center;
 
-    p {
+    div {
         width: 400px;
+    }
+    p {
         text-align: justify;
     }
     img {
@@ -30,7 +32,11 @@ section {
 }
   
 @media only screen and (max-width: 1024px) {
-    item-holder {
+    .item-holder {
         grid-template-columns: 1fr;
+
+        div {
+            width: auto;
+        }
     }
 }

@@ -1,17 +1,24 @@
 import React from 'react';
 
-import NewsCarousel from '../../components/news-carousel/news-carousel.component';
-import Heading from '../../components/section/heading.component';
+import Intro from '../../components/intro/intro.component';
+import Heading from '../../components/heading/heading.component';
 
 import './Homepage.style.scss';
 
 const HomePage = () => (
     <main>
-        <NewsCarousel /> 
+        <Intro /> 
         <Heading title="Apie mane"/>
         <section className="item-holder">
             <img src="https://placehold.co/50x50/000000/fffC/png" alt=''/>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                    content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
+                    their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have 
+                    evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+            </div>
         </section>
         <section>3</section>
         <section>4</section>
@@ -21,19 +28,4 @@ const HomePage = () => (
         <section>8</section>
     </main>
 );
-
-        // <main className="container-main">
-
-        //     <section className="item">
-        //         <NewsCarousel />    
-        //     </section>
-
-            
-        //     <section className="item container-inner">
-        //         <img src="https://via.placeholder.com/300.png/09f/fffC/O" alt=''/>
-        //         <img src="https://via.placeholder.com/300.png/09f/fffC/O" alt=''/>
-        //         <img src="https://via.placeholder.com/300.png/09f/fffC/O" alt=''/>
-        //     </section>
-        // </main>
-
 export default HomePage;

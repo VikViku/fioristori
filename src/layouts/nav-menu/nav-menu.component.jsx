@@ -11,11 +11,11 @@ const NavMenu = () => (
         <a href="/" className="logo">FIORI STORI</a> 
         <ul className='menu'>
             <li><a href="#paslaugos">Paslaugos</a></li>
-            <li>Nuoma</li>
-            <li>Atsiliepimai</li>
-            <li>Apie mane</li>
-            <li>Galerija</li>
-            <li>Kontaktai</li>
+            <li><a href="#nuoma">Nuoma</a></li>
+            <li><a href="#atsiliepimai">Atsiliepimai</a></li>
+            <li><a href="#apie-mane">Apie mane</a></li>
+            <li><a href="#galerija">Galerija</a></li>
+            <li><a href="#kontaktai">Kontaktai</a></li>
         </ul>   
     </nav>
 

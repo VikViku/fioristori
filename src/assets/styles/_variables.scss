@@ -1,7 +1,12 @@
 //Primary and theme colour
 $color-primary: rgb(21, 21, 23); // # // Standard dark colour
 $color-secondary: rgb(91, 15, 211); // #; // Purple
-$color-brand-01: rgb(251, 164, 65); // # // Orange
+$color-accent: rgb(251, 164, 65); // # // Orange
+
+$text-icons: #FFFFFF;
+
+$text-primary: #212121;
+$text-secondary: #757575;
 
 @import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Raleway&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700');

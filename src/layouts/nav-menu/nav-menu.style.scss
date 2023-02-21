@@ -73,13 +73,6 @@ nav {
   } 
 }
 
-@media only screen and (max-width: 600px) {
-  nav,
-  nav ul {
-    grid-template-columns: 1fr;
-  }
-}
-
 // /* ICON */
 .burger-icon {
   position: relative;

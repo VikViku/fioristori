@@ -13,7 +13,8 @@
   h1 {  
     font-weight: 300;
     text-transform:uppercase;
-    font-size:26px; letter-spacing:1px;
+    font-size:26px;
+    letter-spacing:1px;
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -32,5 +33,15 @@
     display: block;
     font-size: 1em;
     line-height: 0.2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .linija {
+    h1 {
+      font-size: 16px;
+      grid-template-rows: 11px 0;
+      grid-gap: 11px;
+    }
   }
 }

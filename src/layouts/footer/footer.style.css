@@ -6,11 +6,11 @@ footer {
     padding: 20px 15px 20px 15px;
     justify-content: end;
     overflow: hidden;
-    background-color: #cccccc;
+    background-color: #212121;
 }
 
 .footer-widget h3 {
-    color: #000;
+    color: #ccc;
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: 600;
@@ -21,7 +21,7 @@ footer {
 }
 
 .footer-widget ul li span {
-    color: #000;
+    color: #ccc;
 }
 
 .contact-block {
@@ -29,7 +29,7 @@ footer {
 }
 
 .contact-block ul li span {
-    color: #000;
+    color: #ccc;
 }
 
 .contact-block ul li {
@@ -42,7 +42,7 @@ footer {
     width: 40px;
     font-size: 18px;
     padding-top: 2px;
-    color: #000;
+    color: #ccc;
 }
 
 .contact-block ul li .svg-inline--fa,
@@ -51,8 +51,8 @@ footer {
     vertical-align: top;
 }
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
     .footer {
         grid-template-columns: 1fr;
     }
-}
+} */
