@@ -1,7 +1,4 @@
 .linija {
-  font-family: 'Raleway', cursive;
-  color: #080808;
-
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -13,13 +10,14 @@
   h1 {  
     font-weight: 300;
     text-transform:uppercase;
-    font-size:26px;
-    letter-spacing:1px;
+    font-size: 33px;
+    letter-spacing: 3px;
+    color: var(--text-primary);
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 16px 0;
-    grid-gap: 22px;
+    grid-template-columns: 1lh 1fr 1lh;
+    grid-template-rows: 26px 0;
+    column-gap: 20px;
 
     &:after, &:before {
       content: " ";
@@ -30,9 +28,13 @@
   }
 
   span {
+    font-family: var(--heading-font);
     display: block;
-    font-size: 1em;
-    line-height: 0.2;
+    font-size: 2em;
+    // -webkit-transform-origin: 25px 10px;
+    // -webkit-transform: rotate(-5deg);
+    line-height: 0.1;
+    color: var(--color-primary-dark);
   }
 }
 

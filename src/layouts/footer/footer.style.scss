@@ -6,14 +6,18 @@ footer {
     padding: 20px 15px 20px 15px;
     justify-content: end;
     overflow: hidden;
-    background-color: #212121;
+    background-color: var(--color-primary-light);
 }
 
-.footer-widget h3 {
-    color: #ccc;
-    margin-bottom: 40px;
-    font-size: 20px;
-    font-weight: 600;
+.footer-widget {
+    // color: var(--color-accent);
+
+    h3 {
+        /* color: #ccc; */
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-weight: 400;
+        }
 }
 
 .footer-widget ul {
@@ -21,7 +25,7 @@ footer {
 }
 
 .footer-widget ul li span {
-    color: #ccc;
+    /* color: #ccc; */
 }
 
 .contact-block {
@@ -29,7 +33,7 @@ footer {
 }
 
 .contact-block ul li span {
-    color: #ccc;
+    /* color: #ccc; */
 }
 
 .contact-block ul li {
@@ -42,7 +46,7 @@ footer {
     width: 40px;
     font-size: 18px;
     padding-top: 2px;
-    color: #ccc;
+    /* color: #ccc; */
 }
 
 .contact-block ul li .svg-inline--fa,

@@ -3,28 +3,133 @@ import React from 'react';
 import Intro from '../../components/intro/intro.component';
 import Heading from '../../components/heading/heading.component';
 
+import paslaugos1 from '../../assets/images/paslaugos_1.jpeg';
+
 import './Homepage.style.scss';
 
 const HomePage = () => (
     <main>
         <Intro /> 
-        <Heading title="Apie mane"/>
-        <section className="item-holder">
-            <img src="https://placehold.co/50x50/000000/fffC/png" alt=''/>
+        <Heading title="Paslaugos"/>
+        <section className="paslaugos">
             <div>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
-                    content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
-                    their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have 
-                    evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                </p>
+                <div className="bg-image one"></div>
+                <div className="overlay">
+                    <p>Vestuvių dekoravimas ir floristika</p>
+                    <button>Daugiau</button>
+                </div>
+            </div>
+            <div>
+            <div className="bg-image two"></div>
+                <div className="overlay">
+                    <p>Asmeninių švenčių dekoravimas ir floristika</p>
+                    <button>Daugiau</button>
+                </div>
+            </div>
+            <div>
+            <div className="bg-image three"></div>
+                <div className="overlay">
+                    <p>Bažnyčios, ceremonijos, vietos dekoravimas ir floristika</p>
+                    <button>Daugiau</button>
+                </div>
+            </div>
+            <div>
+            <div className="bg-image four"></div>
+                <div className="overlay">
+                    <p>Dekoracijų nuoma</p>
+                    <button>Daugiau</button>
+                </div>
+            </div>
+            <div>
+            <div className="bg-image five"></div>
+                <div className="overlay">
+                    <p>Jaunosios puokštės</p>
+                    <button>Daugiau</button>
+                </div>
+            </div>
+            <div>
+            <div className="bg-image six"></div>
+                <div className="overlay">
+                    <p>Sveikinimų puokštės</p>
+                    <button>Daugiau</button>
+                </div>
+            </div>
+        
+        </section>
+        <Heading title="Dekoracijų nuoma"/>
+        <section>3</section>
+        <Heading title="Kainoraštis"/>
+        <section className="kainos">
+            <div>
+                <p>1</p>
+            </div>
+            <div>
+                <p>2</p>
+            </div>
+            <div>
+                <p>3</p>
             </div>
         </section>
-        <section>3</section>
-        <section>4</section>
-        <section>5</section>
-        <section>6</section>
+        <Heading title="Galerija"/>
+        <section className="galerija">
+            <div className="galerija__item galerija__item--1">
+                <img src={paslaugos1} alt="1"/>
+            </div>
+            <div className="galerija__item galerija__item--2">
+                <img src={paslaugos1} alt="2"/>
+            </div>
+            <div className="galerija__item galerija__item--3">
+                <img src={paslaugos1} alt="3"/>
+            </div>
+            <div className="galerija__item galerija__item--4">
+                <img src={paslaugos1} alt="4"/>
+            </div>
+            <div className="galerija__item galerija__item--5">
+                <img src={paslaugos1} alt="5"/>
+            </div>
+            <div className="galerija__item galerija__item--6">
+                <img src={paslaugos1} alt="6"/>
+            </div>
+            <div className="galerija__item galerija__item--7">
+                <img src={paslaugos1} alt="7"/>
+            </div>
+            <div className="galerija__item galerija__item--8">
+                <img src={paslaugos1} alt="8"/>
+            </div>     
+            <div className="galerija__item galerija__item--9">
+                <img src={paslaugos1} alt="9"/>
+            </div>            
+            <div className="galerija__item galerija__item--10">
+                <img src={paslaugos1} alt="10"/>
+            </div>            
+            <div className="galerija__item galerija__item--11">
+                <img src={paslaugos1} alt="11"/>
+            </div>            
+            <div className="galerija__item galerija__item--12">
+                <img src={paslaugos1} alt="12"/>
+            </div>            
+            <div className="galerija__item galerija__item--13">
+                <img src={paslaugos1} alt="13"/>
+            </div>            
+            <div className="galerija__item galerija__item--14">
+                <img src={paslaugos1} alt="14"/>
+            </div>
+            
+            
+        </section>
+        <Heading title="Apie mane" sub="tekstas"/>
+        <section className="item-holder">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
+                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have 
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+            <div className="vida"></div>
+        </section>
+        <Heading title="Atsiliepimai"/>
         <section>7</section>
+        <Heading title="Instagram"/>
         <section>8</section>
     </main>
 );

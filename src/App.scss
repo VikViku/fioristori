@@ -1,11 +1,7 @@
-@import "~bootstrap/scss/bootstrap";
-@import "./assets/styles/variables";
-@import "./assets/styles/responsive";
-
 .App {
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content auto min-content;
     grid-template-columns: 100%;
-    // background-color: $color-accent;
+    background-color: var(--main-bg-color);
 }
