@@ -58,6 +58,8 @@ section {
             font-size: 1.5rem;
             line-height: 1.3rem;
             padding-top: 25px;
+            margin-bottom: 15px;
+
         }
 
         .bg-image {
@@ -74,7 +76,7 @@ section {
             }
             &.three {
                 background: url(../../assets/images/paslaugos_3.jpeg) 35% 50% no-repeat;
-                background-size: 195%;
+                background-size: 199%;
             }
 
             &.four {
@@ -101,6 +103,7 @@ section {
             box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
             border-radius:75px 75px 0 0;
             height: 60%;
+            z-index: 1;
 
         }
         &:hover {
