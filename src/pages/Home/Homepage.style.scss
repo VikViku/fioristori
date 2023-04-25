@@ -7,7 +7,7 @@ main {
 section {
     // background-color: rgb(177, 239, 234);
     // border: 1px black solid;
-    margin: 1.2rem;
+    margin-bottom: 1rem;
     padding: 10px;
 }
 
@@ -22,6 +22,16 @@ section {
 
     p {
         text-align: justify;
+
+        &:first-child::first-letter {
+            color: var(--color-primary-dark);
+            font-family: var(--heading-font);
+            padding: 8px;
+            // text-shadow: .1em .1em 0 hsla(200, 50%, 30%, 0.4);
+          
+            -webkit-initial-letter: 3;
+            initial-letter: 3;
+        }
     }
     .vida {
         background: url(../../assets/images/apie.jpeg) 50% 5% no-repeat;

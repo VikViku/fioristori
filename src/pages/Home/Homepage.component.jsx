@@ -29,7 +29,7 @@ const HomePage = () => (
             <div>
             <div className="bg-image three"></div>
                 <div className="overlay">
-                    <p>Bažnyčios, ceremonijos, vietos dekoravimas ir floristika</p>
+                    <p>Bažnyčios, ceremonijos vietos dekoravimas ir floristika</p>
                     <button>Daugiau</button>
                 </div>
             </div>
@@ -117,14 +117,14 @@ const HomePage = () => (
             
             
         </section>
-        <Heading title="Apie mane" sub="tekstas"/>
+        <Heading title="Labas!" sub="apie mane"/>
         <section className="item-holder">
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
-                content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
-                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have 
-                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </p>
+            <div>
+            <p>Esu Vida, <i>FioriStori</i> įkūrėja, dekoratorė, floristė. Esu didelė gėlių mylėtoja ir tikiu jų galia, todėl kuriant šventės dekorą didelį dėmesį skiriu gėlių kompozicijoms, rūšims, spalvų derinimui.</p>
+            <p>Gėlės man yra gražiausia puošmena šventėje, o jei jas papildo spalviškai suderinta tekstilė, žvakės, vazelės, tuomet ir sukuriama nuostabi šventės atmosfera. Gėlės kuria emociją, kuri liks ilgam ne tik Jūsų prisiminimuose, bet ir nuotraukose.</p>
+            <p>Mano pagrindinė misija – padėti žmonėms sukurti įsimintinas jų švenčių istorijas. Kiekviena šventė yra individuali, todėl galutinis rezultatas niekada nebūna pasikartojantis. Kiekvieną šventę puošiu su didele meile ir atsidavimu.</p>
+            <p>Jei dar neradote savo šventės (vestuvių, gimtadienio, krikštynų, įmonės vakarėlio ir t.t) dekoratoriaus ar floristo, pasikalbėkime ir aš mielai įgyvendinsiu jūsų šventės viziją.</p>
+            </div>
             <div className="vida"></div>
         </section>
         <Heading title="Atsiliepimai"/>
