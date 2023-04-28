@@ -5,9 +5,9 @@ import "./heading.style.scss";
 const Heading = (props) => {
     
     return <div className="linija">
-        <h1>
+        <h2>
             {props.title}
-        </h1>
+        </h2>
         <span>{props.sub}</span>
     </div>
 };

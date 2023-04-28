@@ -7,13 +7,12 @@
   margin-bottom: 1rem;
   text-align: center;
 
-  h1 {  
+  h2 {  
     font-weight: 300;
     text-transform:uppercase;
-    font-size: 33px;
     letter-spacing: 3px;
     color: var(--text-primary);
-    
+
     display: grid;
     grid-template-columns: 1.5rem 1fr 1.5rem;
     grid-template-rows: 26px 0;
@@ -40,8 +39,8 @@
 
 @media only screen and (max-width: 600px) {
   .linija {
-    h1 {
-      font-size: 16px;
+    h2 {
+      font-size: 1rem;
       grid-template-rows: 11px 0;
       grid-gap: 11px;
     }
