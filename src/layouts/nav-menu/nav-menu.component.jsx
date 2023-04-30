@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import './nav-menu.style.scss';
 
@@ -8,14 +9,14 @@ const NavMenu = () => (
         <label htmlFor="nav-toggle" className="burger-menu">
             <span className="burger-icon">&nbsp;</span>
         </label>
-        <a href="/" className="logo">FIORI STORI</a> 
-        <ul className='menu'>
-            <li><a href="#paslaugos">Paslaugos</a></li>
-            <li><a href="#nuoma">Nuoma</a></li>
-            <li><a href="#atsiliepimai">Atsiliepimai</a></li>
-            <li><a href="#apie-mane">Apie mane</a></li>
-            <li><a href="#galerija">Galerija</a></li>
-            <li><a href="#kontaktai">Kontaktai</a></li>
+        <Link to="/" className="logo">FIORI STORI</Link>
+        <ul className="menu">
+            <li><Link to="/paslaugos">Paslaugos</Link></li>
+            <li><Link to="/nuoma">Nuoma</Link></li>
+            <li><Link to="/atsiliepimai">Atsiliepimai</Link></li>
+            <li><Link to="/apie-mane">Apie mane</Link></li>
+            <li><Link to="/galerija">Galerija</Link></li>
+            <li><Link to="/kontaktai">Kontaktai</Link></li>
         </ul>   
     </nav>
 

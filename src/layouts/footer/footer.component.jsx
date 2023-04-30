@@ -13,12 +13,13 @@ const Footer = () => (
         </a>
 
         <div className="footer__social">
-            <p>Sekite</p>
+            <h3>Sekite:</h3>
             <a href="https://www.facebook.com/FioriStori" target="_blank"><FontAwesomeIcon icon={faFacebook} size="2x" className="fa-icon" /></a>
             <a href="https://www.instagram.com/fioristori" target="_blank"><FontAwesomeIcon icon={faInstagram} size="2x" className="fa-icon" /></a>
         </div>
 
         <div className="footer__links">
+            <h3>Informacija</h3>
             <a href="">Pagrindinis</a>
             <a href="">Apie</a>
             <a href="">Galerija</a>

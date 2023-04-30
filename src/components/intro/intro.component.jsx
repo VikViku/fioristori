@@ -5,7 +5,7 @@ import './intro.style.scss';
 const Intro = () => (
 
     <section className="intro">
-        <h1 class="animate-reveal animate">Sveiki atvykę į gėlių magijos namus!</h1>
+        <h1 className="animate-reveal animate">Sveiki atvykę į gėlių magijos namus!</h1>
     </section>
 
 )
