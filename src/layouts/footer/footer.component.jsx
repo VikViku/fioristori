@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import './footer.style.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,24 +8,24 @@ import { faPhone, faHome, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => (
     <footer className="footer">
-        <a className="footer__logo">
+        <Link to="/" className="footer__logo">
             <img alt="logo"></img>
-        </a>
+        </Link>
 
         <div className="footer__social">
             <h3>Sekite:</h3>
-            <a href="https://www.facebook.com/FioriStori" target="_blank"><FontAwesomeIcon icon={faFacebook} size="2x" className="fa-icon" /></a>
-            <a href="https://www.instagram.com/fioristori" target="_blank"><FontAwesomeIcon icon={faInstagram} size="2x" className="fa-icon" /></a>
+            <a href="https://www.facebook.com/FioriStori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} size="2x" className="fa-icon" /></a>
+            <a href="https://www.instagram.com/fioristori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} size="2x" className="fa-icon" /></a>
         </div>
 
         <div className="footer__links">
             <h3>Informacija</h3>
-            <a href="">Pagrindinis</a>
-            <a href="">Apie</a>
-            <a href="">Galerija</a>
-            <a href="">Paslaugos</a>
-            <a href="">Nuoma</a>
-            <a href="">Kontaktai</a>
+            <Link to="/">Pagrindinis</Link>
+            <Link to="/apie-mane">Apie</Link>
+            <Link to="/galerija">Galerija</Link>
+            <Link to="/paslaugos">Paslaugos</Link>
+            <Link to="/nuoma">Nuoma</Link>
+            <Link to="/kontaktai">Kontaktai</Link>
             
         </div>
 

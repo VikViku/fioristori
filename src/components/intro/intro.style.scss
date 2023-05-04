@@ -1,3 +1,5 @@
+@import '../../assets/styles/mixins.scss';
+
 $line-size: 1px;
 $delay1: .5s;
 $delay2: .9s;
@@ -6,7 +8,7 @@ $border-colour: var(--color-primary-light);
 
 .intro {
     display: table;
-    height: 70vh;
+    height: 30vh;
     width: 95%;
     position: relative;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/images/intro.jpeg') no-repeat center center fixed; 
@@ -15,18 +17,22 @@ $border-colour: var(--color-primary-light);
     -o-background-size: cover;
     background-size: cover;
 
-    outline: 5px solid $border-colour;
+    outline: 4px solid $border-colour;
     outline-offset: -2rem;
 
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
+    @include breakpoint(medium) {
+        height: 70vh;
+    }
 
     h1 {
         color: $border-colour;
         margin: 0 auto;
         text-align: center;
+        font-size: 1.2rem;
         vertical-align: middle;
         display: table-cell;
 
@@ -35,6 +41,10 @@ $border-colour: var(--color-primary-light);
            -moz-animation: reveal 1s ease-in 1 normal forwards;
              -o-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
                 animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+
+        @include breakpoint(medium) {
+            font-size: 2rem;
+        }
     }
     .line {
         background: white;

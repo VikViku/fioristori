@@ -117,7 +117,7 @@ const HomePage = () => (
             
             
         </section>
-        <Heading title="Labas!" sub="apie mane"/>
+        <Heading title="Apie mane" sub="įkūrėjos žodis"/>
         <section className="item-holder">
             <div>
             <p>Esu Vida, <i>FioriStori</i> įkūrėja, dekoratorė, floristė. Esu didelė gėlių mylėtoja ir tikiu jų galia, todėl kuriant šventės dekorą didelį dėmesį skiriu gėlių kompozicijoms, rūšims, spalvų derinimui.</p>

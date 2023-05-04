@@ -16,9 +16,19 @@
 
     button {
         padding: 0.3rem;
-        background-color: var(--color-primary-light);
-        color: var(--text-primary);
+        background-color: var(--color-primary-dark);
+        color: white;
         text-transform: uppercase;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+
+        &:hover,
+        &:focus {
+            background: white;
+            outline: 0;
+            color: var(--color-primary-dark);
+        }
     }
     input,
     textarea,
@@ -26,8 +36,4 @@
         width: 100%;
         border: 1px solid var(--color-primary-dark);
     }
-    button:hover, button:focus {
-        background: var(--color-primary-dark);
-        outline: 0;
-      }
 }

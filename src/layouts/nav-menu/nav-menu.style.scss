@@ -2,7 +2,16 @@ nav {
   display: grid;
   grid-template-columns: min-content auto;
   justify-content: space-evenly;
+  align-items: center;
   padding: 1rem;
+  border-bottom: 1px solid var(--text-secondary);
+  background-color: white;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 
   ul, li {
     margin: 0;
@@ -16,20 +25,38 @@ nav {
     display: inline-block;
     padding: 10px;
   }
-  Link, a, .menu {
-    // color: #000;
+  a {
+    position: relative;
+    color: var(--text-secondary);
     text-decoration: none;
     text-transform: uppercase;
-    // font-family: 'Oswald', sans-serif;
     transition: .3s all ease-in-out;
     padding: 10px 0;
     margin-left: 15px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.5px;
-  }
-  a:hover {
-    opacity: .7;
+
+    &:hover {
+      // opacity: .7;
+      color: var(--color-accent);
+
+      &:after {
+        width: 100%;
+      }
+    }
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: var(--color-accent);
+      height: 1px;
+    }
   }
 
   .logo {
