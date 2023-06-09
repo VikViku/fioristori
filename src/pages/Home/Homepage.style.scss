@@ -35,10 +35,10 @@ section {
     }
     .vida {
         background: url(../../assets/images/apie.jpeg) 50% 5% no-repeat;
-        background-size: 100%;
+        background-size: 120%;
         width: 250px;
-        height: 250px;
-        border-radius: 75% 50%;
+        height: 350px;
+        border-radius: 75px 75px 0 0;
 
         box-shadow: rgba(185, 154, 144) 5px 5px, rgba(210, 191, 181) 10px 10px, rgba(147, 158, 137) 15px 15px;
         -moz-box-shadow: rgba(185, 154, 144) 5px 5px, rgba(210, 191, 181) 10px 10px, rgba(147, 158, 137) 15px 15px;
@@ -58,10 +58,7 @@ section {
         position: relative;
         height: 300px;
         box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-        border-top-left-radius:75px;
-        border-top-right-radius:75px;
-        border-bottom-left-radius:0px;
-        border-bottom-right-radius:0px;
+        border-radius: 75px 75px 0 0;
 
         p {
             font-family: var(--heading-font);

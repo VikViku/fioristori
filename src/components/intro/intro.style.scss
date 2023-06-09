@@ -1,40 +1,21 @@
 @import '../../assets/styles/mixins.scss';
 
-$line-size: 1px;
-$delay1: .5s;
-$delay2: .9s;
-$distance: -1px;
-$border-colour: var(--color-primary-light);
-
 .intro {
-    display: table;
-    height: 30vh;
-    width: 95%;
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/images/intro.jpeg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    outline: 4px solid $border-colour;
-    outline-offset: -2rem;
-
+    padding: 0;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-
-    @include breakpoint(medium) {
-        height: 70vh;
-    }
+    width: 100vw;
+    background-color:#333;
 
     h1 {
-        color: $border-colour;
-        margin: 0 auto;
-        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        color: var(--color-primary-light);
         font-size: 1.2rem;
-        vertical-align: middle;
-        display: table-cell;
+        height: 70vb;
 
         opacity: 0;
         -webkit-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
@@ -44,66 +25,19 @@ $border-colour: var(--color-primary-light);
 
         @include breakpoint(medium) {
             font-size: 2rem;
-        }
-    }
-    .line {
-        background: white;
-        position: absolute;
-        transition: none;
-        transform:scale(0);
-        opacity:1;
-
-        &:nth-child(1) {
-            transform-origin: 100% 100%;
-            height:$line-size;
-            width: 20%;
-            bottom:0;
-        }
-          
-         
-        &:nth-child(4) {
-            transform-origin: 0 100%;
-            height:$line-size;
-            width: 20%;
-            top:$distance;
-            right:0;
-        }   
-         
-        &:nth-child(2) {
-            transform-origin: 100% 100%;
-            height:100%;
-            width: $line-size;
-            bottom:0;
-            left:$distance;
-        }        
-          
-        &:nth-child(5) {
-            transform-origin: 100% 0;
-            height:100%;
-            width: $line-size;
-            bottom:0;
-            right:$distance;
-        }
-                 
-        &:nth-child(3) {
-                transform-origin: 0 100%;
-                height:$line-size;
-                width: 100%;
-                top:$distance;
-                left:$distance;
-            }
-          
-          
-        &:nth-child(6) {
-            transform-origin: 100% 0;
-            height:$line-size;
-            width: 100%;
-            bottom:0;
-            right:$distance;
+            height: 30vb;
         }
     }
 
+}
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 @keyframes fadeInAnimation {

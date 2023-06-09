@@ -10,6 +10,16 @@ import './Homepage.style.scss';
 const HomePage = () => (
     <main>
         <Intro /> 
+        <Heading title="Apie mane" sub="įkūrėjos žodis"/>
+        <section className="item-holder">
+            <div>
+            <p>Esu Vida, <i>FioriStori</i> įkūrėja, dekoratorė, floristė. Esu didelė gėlių mylėtoja ir tikiu jų galia, todėl kuriant šventės dekorą didelį dėmesį skiriu gėlių kompozicijoms, rūšims, spalvų derinimui.</p>
+            <p>Gėlės man yra gražiausia puošmena šventėje, o jei jas papildo spalviškai suderinta tekstilė, žvakės, vazelės, tuomet ir sukuriama nuostabi šventės atmosfera. Gėlės kuria emociją, kuri liks ilgam ne tik Jūsų prisiminimuose, bet ir nuotraukose.</p>
+            <p>Mano pagrindinė misija – padėti žmonėms sukurti įsimintinas jų švenčių istorijas. Kiekviena šventė yra individuali, todėl galutinis rezultatas niekada nebūna pasikartojantis. Kiekvieną šventę puošiu su didele meile ir atsidavimu.</p>
+            <p>Jei dar neradote savo šventės (vestuvių, gimtadienio, krikštynų, įmonės vakarėlio ir t. t.) dekoratoriaus ar floristo, pasikalbėkime ir aš mielai įgyvendinsiu jūsų šventės viziją.</p>
+            </div>
+            <div className="vida"></div>
+        </section>
         <Heading title="Paslaugos"/>
         <section className="paslaugos">
             <div>
@@ -58,18 +68,6 @@ const HomePage = () => (
         </section>
         <Heading title="Dekoracijų nuoma"/>
         <section>3</section>
-        <Heading title="Kainoraštis"/>
-        <section className="kainos">
-            <div>
-                <p>1</p>
-            </div>
-            <div>
-                <p>2</p>
-            </div>
-            <div>
-                <p>3</p>
-            </div>
-        </section>
         <Heading title="Galerija"/>
         <section className="galerija">
             <div className="galerija__item galerija__item--1">
@@ -117,18 +115,20 @@ const HomePage = () => (
             
             
         </section>
-        <Heading title="Apie mane" sub="įkūrėjos žodis"/>
-        <section className="item-holder">
-            <div>
-            <p>Esu Vida, <i>FioriStori</i> įkūrėja, dekoratorė, floristė. Esu didelė gėlių mylėtoja ir tikiu jų galia, todėl kuriant šventės dekorą didelį dėmesį skiriu gėlių kompozicijoms, rūšims, spalvų derinimui.</p>
-            <p>Gėlės man yra gražiausia puošmena šventėje, o jei jas papildo spalviškai suderinta tekstilė, žvakės, vazelės, tuomet ir sukuriama nuostabi šventės atmosfera. Gėlės kuria emociją, kuri liks ilgam ne tik Jūsų prisiminimuose, bet ir nuotraukose.</p>
-            <p>Mano pagrindinė misija – padėti žmonėms sukurti įsimintinas jų švenčių istorijas. Kiekviena šventė yra individuali, todėl galutinis rezultatas niekada nebūna pasikartojantis. Kiekvieną šventę puošiu su didele meile ir atsidavimu.</p>
-            <p>Jei dar neradote savo šventės (vestuvių, gimtadienio, krikštynų, įmonės vakarėlio ir t. t.) dekoratoriaus ar floristo, pasikalbėkime ir aš mielai įgyvendinsiu jūsų šventės viziją.</p>
-            </div>
-            <div className="vida"></div>
-        </section>
         <Heading title="Atsiliepimai"/>
         <section>7</section>
+        <Heading title="Kainoraštis"/>
+        <section className="kainos">
+            <div>
+                <p>1</p>
+            </div>
+            <div>
+                <p>2</p>
+            </div>
+            <div>
+                <p>3</p>
+            </div>
+        </section>
         <Heading title="Instagram"/>
         <section>8</section>
     </main>
