@@ -1,19 +1,21 @@
 //Primary and theme colour
 :root {
-    --color-primary-dark: rgb(222, 196, 188);
-    --color-primary-light: rgb(242, 227, 220);
-    --color-accent: rgb(147, 158, 137);
+    --color-primary-dark: rgb(222, 196, 188); // #dec4bc
+    --color-primary-light: rgb(242, 227, 220); // #f2e3dc
+    --color-accent: rgb(147, 158, 137); // #939e89
 
     --text-primary: #53524f;
     --text-secondary: #212121;
 
     --main-bg-color: #f4f4f4;
 
-    --heading-font: 'Dynalight', sans-serif;
     --body-font: 'Montserrat', sans-serif;
     --base-font-size: 18px;
     --base-font-weight: 200;
+
+    --heading-font: 'Source Sans 3', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Raleway&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,400;0,600;1,200&display=swap');

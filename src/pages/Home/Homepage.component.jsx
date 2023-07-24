@@ -116,7 +116,28 @@ const HomePage = () => (
             
         </section>
         <Heading title="Atsiliepimai"/>
-        <section>7</section>
+        <section className="testimonials">
+            <div className="testimonials__desc">
+                <p>Dar karta noriu padėkoti jums už tai, kad pavertėte mano vakarą stebuklingu ir ypatingu! Abejingų tikrai neliko, kadangi šventėje dalyvavo nevienas menininkas. Jie ypač įvertino jūsų darbą ir meniškumą.
+                     Net restorano darbuotojai fotografavo salę ir kalbėjo, kad tokio skoningo papuošimo, kuris taip puikiai tiktų prie jų salės, jie dar neturėjo!</p>
+                <h3 className="testimonials__author">Natalija D.</h3>
+            </div>
+            <div className="testimonials__desc">
+                <p>FioriStori - floristika ir švenčių dekoras dekoratorė Vida išpildė visus mano lūkesčius, kruopšti atsakinga ir paslaugi. Tai žmogus, kuris 120% myli savo darbą ir iš detalių sukuria woooow efektą!!!! 
+                    Nestokoja patarimų ir idėjų, įsiklauso ir įsigilina į tai, ko nori jaunieji! Gėlės, kompozicijos, nuotakos puokštė ir visa aplinka buvo tai ko ir ieškojau!!!! Ne vienas svečias paliko puikių atsiliepimų apie šventės dekoracijas.</p>
+                <h3 className="testimonials__author">Delija T.</h3>
+            </div>
+            <div className="testimonials__desc">
+                <p>Vida, yra NEREALI!!! Esame sužavėti jos sukurtu Krikštynų dekoru. Net vyras, kuris visada kartoja, kad nėra estetas sakė, kad labai gražu!!! Buvo įsiklausyta ir viršyti visi norai ir lūkesčiai!!!
+                    O aš - jautresnis žmogus, tai vos neapsiašarojau iš jos sukurto grožio ir jaučiamo aplinkoje nuoširdumo, jautrumo!!! Iš visos širdies AČIŪ, Jums Vida!</p>
+                <h3 className="testimonials__author">Neringa R.</h3>
+            </div>
+            <div className="testimonials__desc">
+                <p>Noriu padėkoti už puikų aptarnavimą! Kovo 8 d. mama gavo puokštę iš pat ryto, kaip ir buvo sutarta. Puokštė nuostabi, sukurta atsižvelgiant į mamos skoni (buvo pasiteirauta, kokias spalvas ir gėles mano mama mėgsta).
+                    Mama liko labai patenkinta. Labai geras kainos ir kokybės santykis. Ačiū ir linkiu sėkmės!</p>
+                <h3 className="testimonials__author">Lilija G.</h3>
+            </div>
+        </section>
         <Heading title="Kainoraštis"/>
         <section className="kainos">
             <div>
