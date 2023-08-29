@@ -7,7 +7,7 @@ const Testimonial = (props) => {
   const { testimonialData } = props;
   const refFeedbackParentDiv = useRef(null);
   const refButtonsParentDiv = useRef(null);
-  const timeoutRef = useRef(null);
+  // const timeoutRef = useRef(null);
   const leftRef = useRef(0);
   const rightRef = useRef(0);
   const [delay, setDelay] = useState(100);
@@ -86,7 +86,7 @@ const Testimonial = (props) => {
         ref={refFeedbackParentDiv}
         className={styles["section-three-sub-div-one"]}
       >
-        <div className={`${styles["quotes-img-left"]}`}
+        <div className={`${styles["quotes-img"]} ${styles["quotes-img-left"]}`}
         onClick={previous}>
           <span></span>
         </div>
@@ -101,7 +101,7 @@ const Testimonial = (props) => {
             </div>
           );
         })}
-        <div className={`${styles["quotes-img-right"]}`}
+        <div className={`${styles["quotes-img"]} ${styles["quotes-img-right"]}`}
         onClick={next}>
           <span></span>
         </div>

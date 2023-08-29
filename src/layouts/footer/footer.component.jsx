@@ -13,7 +13,7 @@ const Footer = () => (
         </Link>
 
         <div className="footer__social">
-            <h3>Sekite:</h3>
+            <h3>Sekite</h3>
             <a href="https://www.facebook.com/FioriStori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} size="2x" className="fa-icon" /></a>
             <a href="https://www.instagram.com/fioristori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} size="2x" className="fa-icon" /></a>
         </div>

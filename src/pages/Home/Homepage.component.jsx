@@ -79,12 +79,12 @@ const HomePage = () => (
             <div className="galerija__item galerija__item--2">
                 <img src={paslaugos1} alt="2"/>
             </div>
-            <div className="galerija__item galerija__item--3">
+            {/* <div className="galerija__item galerija__item--3">
                 <img src={paslaugos1} alt="3"/>
             </div>
             <div className="galerija__item galerija__item--4">
                 <img src={paslaugos1} alt="4"/>
-            </div>
+            </div> */}
             <div className="galerija__item galerija__item--5">
                 <img src={paslaugos1} alt="5"/>
             </div>
@@ -94,7 +94,7 @@ const HomePage = () => (
             <div className="galerija__item galerija__item--7">
                 <img src={paslaugos1} alt="7"/>
             </div>
-            <div className="galerija__item galerija__item--8">
+            {/* <div className="galerija__item galerija__item--8">
                 <img src={paslaugos1} alt="8"/>
             </div>     
             <div className="galerija__item galerija__item--9">
@@ -114,7 +114,7 @@ const HomePage = () => (
             </div>            
             <div className="galerija__item galerija__item--14">
                 <img src={paslaugos1} alt="14"/>
-            </div>
+            </div>*/}
             
             
         </section>

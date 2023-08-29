@@ -4,39 +4,12 @@
     justify-items: center;
     row-gap: 1rem;
     max-width: 60%;
-    /* background-color: rgb(250, 251, 253); */
-    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
-    border-radius: 75px 75px 0 0;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    background-color: #ffffff;
-  }
-  
-  .quotes-img-right {
-    /* justify-self: end; */
-    /* // background-image: url(../../assets/left.png); */
-    /* margin-right: 20px; */
-
-    right: -20px;
-  
   }
 
-  .quotes-img-right span {
-    box-shadow: 0 0 10px 10px #ffffff, 5px 0 30px 0px #e1e1e1;
-  }
   .quotes-img-right span:before {
     content: '>';
   }
-  
-  .quotes-img-left {
-    /* // background-image: url(../../assets/right.png); */
-    /* margin-left: 20px; */
 
-    left: -20px;
-  }
-
-  .quotes-img-left span {
-    box-shadow: 0 0 10px 10px #ffffff, -5px 0 30px 0px #e1e1e1;
-  }
   .quotes-img-left span:before {
     content: '<';
   }
@@ -44,25 +17,31 @@
   .section-three-sub-div-one {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    justify-content: center;
-    text-align: center;
-    margin-top: 2rem;
+    justify-items: center;
+    align-items: center;
   }
   
   .main-quotes-div {
-    /* width: 1110px; */
     transition: 1s;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    border-radius: 75px 75px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    background-color: #ffffff;
+    padding: 1.5rem;
   }
-/*   
+ 
   .quotes-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px #ffffff, 5px 0 30px 0px #e1e1e1;
+    -moz-box-shadow: 0 0 10px 10px #ffffff, 5px 0 30px 0px #e1e1e1;
+    -webkit-box-shadow: 0 0 10px 10px #ffffff, 5px 0 30px 0px #e1e1e1;
+    -o-box-shadow: 0 0 10px 10px #ffffff, 5px 0 30px 0px #e1e1e1;
     width: 25px;
-    height: 23px;
-  } */
+    height: 25px;
+    border-radius: 100px;
+    cursor: pointer;
+  }
   
   /* ------------------ */
   .para {
