@@ -1,3 +1,5 @@
+@import '../../assets/styles/mixins';
+
 main {
     display: grid;
     grid-template-rows: repeat(auto-fit, min-content);
@@ -57,13 +59,11 @@ section {
     div {
         position: relative;
         height: 300px;
-        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-        border-radius: 75px 75px 0 0;
+        @include rounded-upper-corners;
 
         p {
             font-family: var(--heading-font);
-            font-size: 1.5rem;
-            line-height: 1.3rem;
+            line-height: 1rem;
             padding-top: 25px;
             margin-bottom: 15px;
 
@@ -107,9 +107,8 @@ section {
             width: 100%;
             opacity: 0;
             background-color: var(--main-bg-color);
-            box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-            border-radius:75px 75px 0 0;
-            height: 60%;
+            @include rounded-upper-corners;
+            height: 50%;
             z-index: 1;
 
         }
@@ -170,23 +169,27 @@ section {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 8vw);
 
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-    border-radius:75px 75px 0 0;
+   @include rounded-upper-corners;
     background-color: #fff;
     
 
     &__item {
-        img {
-            border-radius:75px 75px 0 0;
-        }
         &--1 {
             grid-row: 1 / span 2;
             grid-column: 1 / span 2;
+
+            img {
+                border-radius:75px 0 0 0;
+            }
         }
 
         &--2 {
             grid-row: 1 / span 3;
             grid-column: 3 / span 4;
+
+            img {
+                border-radius:0 75px 0 0;
+            }
         }
         &--3 {
             grid-row: 1 / span 2;

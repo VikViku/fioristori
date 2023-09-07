@@ -9,3 +9,8 @@
       @media (min-width: 37.5em)  { @content; }
     }
   }
+
+@mixin rounded-upper-corners {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  border-radius:75px 75px 0 0;
+}
