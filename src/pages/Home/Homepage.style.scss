@@ -13,42 +13,107 @@ section {
     padding: 10px;
 }
 
-
-.item-holder {
+.item-holder2 {
+    width: 90%;
     display: grid;
-    grid-template-columns: 1fr min-content;
-    column-gap: 5rem;
-    row-gap: 1em;
-    width: 50%;
-    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    margin-top: 2rem;
 
-    p {
-        text-align: justify;
-
-        &:first-child::first-letter {
-            color: var(--color-primary-dark);
-            font-family: var(--heading-font);
-            padding: 8px;
-            // text-shadow: .1em .1em 0 hsla(200, 50%, 30%, 0.4);
-          
-            -webkit-initial-letter: 3;
-            initial-letter: 3;
-        }
+    @include breakpoint(medium) {
+        width: 80%;
+        max-width: 1170px;
+        grid-template-columns:repeat(2, 1fr);
+        grid-gap: 50px 30px;
     }
-    .vida {
-        background: url(../../assets/images/apie.jpeg) 50% 5% no-repeat;
-        background-size: 120%;
-        width: 250px;
-        height: 350px;
-        border-radius: 75px 75px 0 0;
 
-        box-shadow: rgba(185, 154, 144) 5px 5px, rgba(210, 191, 181) 10px 10px, rgba(147, 158, 137) 15px 15px;
-        -moz-box-shadow: rgba(185, 154, 144) 5px 5px, rgba(210, 191, 181) 10px 10px, rgba(147, 158, 137) 15px 15px;
-        -webkit-box-shadow: rgb(222, 196, 188) 0px 5px 2px 1px, rgb(242, 227, 220, 0.9) 0px 10px 2px 2px;
+    .right {
+        overflow: hidden;
+
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            @include rounded-upper-corners;
+
+            @include breakpoint(medium) {
+                width: 70%;
+                height: 70%;
+            }
+        }
         
     }
 
+    .left {
+        display: flex;
+        text-align: justify;
+
+        .content {
+            padding-right: 20px;
+
+            p {
+                // font-size: 16px;
+                line-height: 20px;
+                padding-bottom: 15px;
+            }
+
+            p:first-of-type {
+                margin-top: 45px;
+                &::first-letter {
+                    color: var(--color-primary-dark);
+                    font-family: var(--heading-font);
+                    padding: 8px;
+                
+                    -webkit-initial-letter: 3;
+                    initial-letter: 3;
+                }
+            }
+            
+            @media (max-width: 991px) {
+                padding-right: 0;
+            }
+        }
+    }
 }
+
+// .item-holder {
+//     display: grid;
+//     grid-template-columns: 1fr min-content;
+//     column-gap: 5rem;
+//     row-gap: 1em;
+//     width: 50%;
+//     height: 430px;
+//     justify-items: center;
+    
+
+//     p {
+//         text-align: justify;
+
+//         &:first-child::first-letter {
+//             color: var(--color-primary-dark);
+//             font-family: var(--heading-font);
+//             padding: 8px;
+//             // text-shadow: .1em .1em 0 hsla(200, 50%, 30%, 0.4);
+          
+//             -webkit-initial-letter: 3;
+//             initial-letter: 3;
+//         }
+//     }
+//     .vida {
+//         background: url(../../assets/images/kureja.jpg) 50% 5% no-repeat;
+//         background-size: 100%;
+//         width: 300px;
+//         height: auto;
+//         border-radius: 75px 75px 0 0;
+
+//         box-shadow: rgba(185, 154, 144) 5px 5px, rgba(210, 191, 181) 10px 10px, rgba(147, 158, 137) 15px 15px;
+//         -moz-box-shadow: rgba(185, 154, 144) 5px 5px, rgba(210, 191, 181) 10px 10px, rgba(147, 158, 137) 15px 15px;
+//         -webkit-box-shadow: rgb(222, 196, 188) 0px 5px 2px 1px, rgb(242, 227, 220, 0.9) 0px 10px 2px 2px;
+        
+//     }
+
+// }
 
 .paslaugos {
     display: grid;

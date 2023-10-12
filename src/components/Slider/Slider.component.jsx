@@ -10,7 +10,7 @@ const Slider =  props => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            if (currentState === 2) {
+            if (currentState === 1) {
                 setCurrentState(0)
             } else {
                 setCurrentState(currentState+1)

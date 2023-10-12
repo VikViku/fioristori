@@ -4,13 +4,13 @@
     height: 30vh;
 
     @include breakpoint(medium) {
-        height: 70vh;
+        height: 60vh;
     }       
 }
 
 .slider2 {
     position: relative;
-    height: 70vh;
+    height: 60vh;
 
     .description {
         width: 60%;

@@ -15,7 +15,8 @@
         left: 35%;
         color: var(--color-primary-light);
         font-size: 1.2rem;
-        height: 70vb;
+        font-weight: 400;
+        // height: 70vb;
 
         opacity: 0;
         -webkit-animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
@@ -25,7 +26,7 @@
 
         @include breakpoint(medium) {
             font-size: 2rem;
-            height: 30vb;
+            // height: 30vb;
         }
     }
 
