@@ -24,6 +24,11 @@ nav {
   li {
     display: inline-block;
     padding: 10px;
+
+    .dropdown {
+      display: none;
+      position: absolute;
+    }
   }
   a {
     position: relative;
@@ -68,6 +73,15 @@ nav {
   display: none;
 }
 
+nav ul li:hover .dropdown{
+  display: block;
+  position: absolute;
+}
+ 
+nav ul li:hover .dropdown ul{
+  display: flex;
+  flex-direction: column;
+}
 
 
 @media only screen and (max-width: 1024px) {

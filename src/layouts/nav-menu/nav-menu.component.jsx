@@ -15,7 +15,15 @@ const NavMenu = () => (
             <li><Link to="/nuoma">Nuoma</Link></li>
             <li><Link to="/atsiliepimai">Atsiliepimai</Link></li>
             <li><Link to="/apie-mane">Apie mane</Link></li>
-            <li><Link to="/galerija">Galerija</Link></li>
+            <li><Link to="/galerija">Galerija</Link>
+                <div class="dropdown">
+                    <ul>
+                        <li><Link to="/">Vestuvės</Link></li>
+                        <li><Link to="/">Krikštynos ir gimtadieniai</Link></li>
+                        <li><Link to="/">Kitos šventės</Link></li>
+                    </ul>
+                </div>
+            </li>
             <li><Link to="/kontaktai">Kontaktai</Link></li>
         </ul>   
     </nav>

@@ -77,6 +77,7 @@ const HomePage = () => (
         <Heading title="Dekoracijų nuoma"/>
         <section>3</section>
         <Heading title="Galerija"/>
+        <div className='aaaa'>
         <section className="galerija">
             <div className="galerija__item galerija__item--1">
                 <img src={paslaugos1} alt="1"/>
@@ -123,101 +124,9 @@ const HomePage = () => (
             
             
         </section>
-
+</div>
         <Heading title="Atsiliepimai"/>
-        {/* <section className="testimonials">
-            <input type="radio" name="testimonial" id="input-testimonial1"/>
-            <input type="radio" name="testimonial" id="input-testimonial2"/>
-            <input type="radio" name="testimonial" id="input-testimonial3"/>
-            <input type="radio" name="testimonial" id="input-testimonial4"/>
-
-            <div className="testimonials__inner">
-                <div className="testimonial">
-                    <div className="testimonial__text">
-                        <p>Dar kartą noriu padėkoti Jums už tai, kad pavertėte mano vakarą stebuklingu ir ypatingu! Abejingų tikrai neliko. 🥰 Kadangi šventėje dalyvavo ne vienas menininkas, jie ypač įvertino Jūsų darbą ir meniskumą. 💜🤍 
-                        Net restorano darbuotojai fotografavo salę ir kalbėjo, kad tokio skoningo papuošimo, kuris taip puikiai tinktų prie jų salės, jie dar neturėjo! 💯</p>
-                        <h3 className="testimonial__author">Natalija D.</h3>
-                    </div>
-                </div>
-
-                <div className="testimonial">
-                    <div className="testimonial__text">
-                        <p>FioriStori - floristika ir švenčių dekoras dekoratorė Vida išpildė visus mano lūkesčius, kruopšti atsakinga ir paslaugi. Tai žmogus, kuris 120% myli savo darbą ir iš detalių sukuria woooow efektą!!!! 
-                    Nestokoja patarimų ir idėjų, įsiklauso ir įsigilina į tai, ko nori jaunieji! Gėlės, kompozicijos, nuotakos puokštė ir visa aplinka buvo tai ko ir ieškojau!!!! 🤎🤍🤎 Ne vienas svečias paliko puikių atsiliepimų apie šventės dekoracijas. ❤️🥳❤️</p>
-                    <h3 className="testimonial__author">Delija T.</h3>
-                    </div>
-                </div>
-
-                <div className="testimonial">
-                    <div className="testimonial__text">
-                        <p>Vida, yra NEREALI😊!!! Esame sužavėti jos sukurtu Krikštynų dekoru. Net vyras, kuris visada kartoja, kad nėra estetas sakė, kad labai gražu😍!!! Buvo įsiklausyta ir viršyti visi norai ir lūkesčiai 🥰!!!
-                        O aš - jautresnis žmogus, tai vos neapsiašarojau iš jos sukurto grožio ir jaučiamo aplinkoje nuoširdumo, jautrumo 🥰!!! Iš visos širdies AČIŪ, Jums Vida🌺🥰!</p>
-                        <h3 className="testimonial__author">Neringa R.</h3>
-                    </div>
-                </div>
-                
-                <div className="testimonial">
-                    <div className="testimonial__text">
-                    <p>Noriu padėkoti už puikų aptarnavimą! Kovo 8 d. mama gavo puokštę iš pat ryto, kaip ir buvo sutarta. Puokštė nuostabi, sukurta atsižvelgiant į mamos skoni (buvo pasiteirauta, kokias spalvas ir gėles mano mama mėgsta).
-                    Mama liko labai patenkinta. Labai geras kainos ir kokybės santykis. Ačiū ir linkiu sėkmės!</p>
-                    <h3 className="testimonial__author">Lilija G.</h3>
-                    </div>
-                </div>                                                
-            </div>
-
-            <div class="testimonials__arrows">
-                <div class="arrow arrow-left">
-                    <label for="input-testimonial1"></label>
-                    <label for="input-testimonial2"></label>
-                    <label for="input-testimonial3"></label>
-                    <label for="input-testimonial4"></label>
-                    <span></span>
-                </div>
-                <div class="arrow arrow-right">
-                    <label for="input-testimonial1"></label>
-                    <label for="input-testimonial2"></label>
-                    <label for="input-testimonial3"></label>
-                    <label for="input-testimonial4"></label>
-                    <span></span>
-                </div>
-            </div>
-
-            <div class="testimonials__bullets">
-                <label for="input-testimonial1">
-                    <div class="bullet">
-                        <div>
-                            <span></span>
-                        </div>
-                    </div>
-                </label>
-                <label for="input-testimonial2">
-                    <div class="bullet">
-                        <div>
-                            <span></span>
-                        </div>
-                    </div>
-                </label>
-                <label for="input-testimonial3">
-                    <div class="bullet">
-                        <div>
-                            <span></span>
-                        </div>
-                    </div>
-                </label>
-                <label for="input-testimonial4">
-                    <div class="bullet">
-                        <div>
-                            <span></span>
-                        </div>
-                    </div>
-                </label>
-            </div> 
-
-        </section>*/}
-
         <Testimonial testimonialData={feedback}></Testimonial>
-
-
 
         <Heading title="Kainoraštis"/>
         <section className="kainos">
@@ -231,7 +140,7 @@ const HomePage = () => (
                 <p>3</p>
             </div>
         </section>
-        <Heading title="Instagram"/>
+        <Heading title="Mes Instagrame" sub="čia matysite naujausias ir aktualiausias nuotraukas:"/>
         <section>8</section>
     </main>
 );

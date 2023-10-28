@@ -4,6 +4,7 @@
     justify-items: center;
     row-gap: 1rem;
     max-width: 60%;
+    font-weight: 200;
   }
 
   .quotes-img-right span:before {

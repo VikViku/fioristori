@@ -12,12 +12,6 @@ const Footer = () => (
             <img alt="logo"></img>
         </Link>
 
-        <div className="footer__social">
-            <h3>Sekite</h3>
-            <a href="https://www.facebook.com/FioriStori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} size="2x" className="fa-icon" /></a>
-            <a href="https://www.instagram.com/fioristori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} size="2x" className="fa-icon" /></a>
-        </div>
-
         <div className="footer__links">
             <h3>Informacija</h3>
             <Link to="/">Pagrindinis</Link>
@@ -29,7 +23,14 @@ const Footer = () => (
             
         </div>
 
+        <div className="footer__social">
+            <h3>Sekite</h3>
+            <a href="https://www.facebook.com/FioriStori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} size="2x" className="fa-icon" /></a>
+            <a href="https://www.instagram.com/fioristori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} size="2x" className="fa-icon" /></a>
+        </div>
+
         <div className="footer__contacts">
+            <h3>Kontaktai</h3>
             <div>
                 <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:timinskiene.vida3@gmail.com">timinskiene.vida3@gmail.com</a>
             </div>

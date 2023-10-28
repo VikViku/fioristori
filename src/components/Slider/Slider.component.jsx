@@ -13,7 +13,7 @@ const Slider =  props => {
             if (currentState === 1) {
                 setCurrentState(0)
             } else {
-                setCurrentState(currentState+1)
+                setCurrentState(1)
             }
             return () => clearTimeout(timer);
 

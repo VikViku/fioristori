@@ -3,8 +3,8 @@
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  // margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 
   h2 {  
@@ -12,9 +12,10 @@
     text-transform:uppercase;
     letter-spacing: 3px;
     color: var(--text-primary);
+    font-size: 1.5rem;
 
     display: grid;
-    grid-template-columns: 1.5rem 1fr 1.5rem;
+    grid-template-columns: 0.8fr 1fr 0.8fr;
     grid-template-rows: 26px 0;
     column-gap: 20px;
 
@@ -29,7 +30,8 @@
   span {
     font-family: var(--heading-font);
     display: block;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    font-weight: 400;
     // -webkit-transform-origin: 25px 10px;
     // -webkit-transform: rotate(-5deg);
     line-height: 0.1;
@@ -41,8 +43,12 @@
   .linija {
     h2 {
       font-size: 1rem;
+      grid-template-columns: 0.1fr 1fr 0.1fr;
       grid-template-rows: 11px 0;
       grid-gap: 11px;
+    }
+    span {
+      font-size: 1rem;
     }
   }
 }
