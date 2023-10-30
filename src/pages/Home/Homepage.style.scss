@@ -32,8 +32,7 @@ section {
         background-color: var(--color-primary-light);
 
         img {
-            width: 50%;
-            height: 50%;
+            width: 40%;
             object-fit: cover;
             @include rounded-upper-corners;
             margin: 3rem 0 3rem;
