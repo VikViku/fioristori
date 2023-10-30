@@ -11,25 +11,16 @@
     background-color: var(--color-primary-light);
     color: var(--text-primary);
     font-weight: 200;
+    text-align: center;
 
     @include breakpoint(large) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
-            "logo links social"
-            "logo links contacts";
-        align-items: center;
-    }
-
-    a {
-        display: inline-block;
-        color: var(--text-secondary);
-        text-decoration: none;
-
-        &:hover {
-            color: var(--color-accent);
-        }
+            "logo links contacts"
+            ". links social";
+            // ". copyright .";
     }
     span {
         display: inline-block;
@@ -41,11 +32,13 @@
 
         @include breakpoint(large) {
             grid-area: logo;
+            align-self: center;
+            justify-self: end;
         }
 
     }
     &__social {
-        margin-bottom: 1.875rem;
+        // margin-bottom: 1.875rem;
 
         a {
             transition: color 50ms ease-in-out;
@@ -53,6 +46,7 @@
         
         @include breakpoint(large) {
             grid-area: social;
+            text-align: left;
         }
 
         span {
@@ -69,8 +63,8 @@
 
         @include breakpoint(large) {
             grid-area: links;
+            align-items: center;
         }
-
         a {
             line-height: 1.5;
 
@@ -83,10 +77,35 @@
 
         @include breakpoint(large) {
             grid-area: contacts;
+            text-align: left;
         }
 
         a, span {
             line-height: 1.5;
         }
     }
+
+    // &__copyright {
+    //     grid-area: copyright;
+    //     text-align: center;
+    //     line-height: 0.6;
+    //     font-size: 0.7rem;
+    //     text-transform: uppercase;
+    // }
+}
+
+a {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--color-accent);
+    }
+}
+.copyright {
+    text-align: center;
+    line-height: 0.6;
+    font-size: 0.7rem;
+    text-transform: uppercase;
 }

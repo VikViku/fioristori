@@ -7,40 +7,52 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faHome, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => (
-    <footer className="footer">
-        <Link to="/" className="footer__logo">
-            <img alt="logo"></img>
-        </Link>
+    <div>
+        <footer className="footer">
+            <Link to="/" className="footer__logo">
+                <img alt="logo"></img>
+            </Link>
 
-        <div className="footer__links">
-            <h3>Informacija</h3>
-            <Link to="/">Pagrindinis</Link>
-            <Link to="/apie-mane">Apie</Link>
-            <Link to="/galerija">Galerija</Link>
-            <Link to="/paslaugos">Paslaugos</Link>
-            <Link to="/nuoma">Nuoma</Link>
-            <Link to="/kontaktai">Kontaktai</Link>
-            
-        </div>
-
-        <div className="footer__social">
-            <h3>Sekite</h3>
-            <a href="https://www.facebook.com/FioriStori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} size="2x" className="fa-icon" /></a>
-            <a href="https://www.instagram.com/fioristori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} size="2x" className="fa-icon" /></a>
-        </div>
-
-        <div className="footer__contacts">
-            <h3>Kontaktai</h3>
-            <div>
-                <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:timinskiene.vida3@gmail.com">timinskiene.vida3@gmail.com</a>
+            <div className="footer__links">
+                <h3>Informacija</h3>
+                <Link to="/">Pagrindinis</Link>
+                <Link to="/apie-mane">Apie</Link>
+                <Link to="/galerija">Galerija</Link>
+                <Link to="/paslaugos">Paslaugos</Link>
+                <Link to="/nuoma">Nuoma</Link>
+                <Link to="/kontaktai">Kontaktai</Link>
+                
             </div>
-            <div>
-                <FontAwesomeIcon icon={faPhone} /> <a href="tel:+37067543081"> +37067543081</a>
-            </div>
-            <span><FontAwesomeIcon icon={faHome} /> Vilnius, bet dekoruoju visoje Lietuvoje</span>
-        </div>
 
-    </footer>
+            <div className="footer__contacts">
+                <h3>Kontaktai</h3>
+                <div>
+                    <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:timinskiene.vida3@gmail.com">timinskiene.vida3@gmail.com</a>
+                </div>
+                <div>
+                    <FontAwesomeIcon icon={faPhone} /> <a href="tel:+37067543081"> +37067543081</a>
+                </div>
+                <span><FontAwesomeIcon icon={faHome} /> Vilnius, bet dekoruoju visoje Lietuvoje</span>
+            </div>
+
+            <div className="footer__social">
+                <h3>Sekite</h3>
+                <a href="https://www.facebook.com/FioriStori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} size="2x" className="fa-icon" /></a>
+                <a href="https://www.instagram.com/fioristori" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} size="2x" className="fa-icon" /></a>
+            </div>
+
+            {/* <div className="footer__copyright">
+                <p>Copyright &copy; {(new Date().getFullYear())} Fiori Stori.</p>
+                <p>By <a href="https://www.webjeweler.lt">Webjeweler</a></p>
+            </div> */}
+
+        </footer>
+
+        <div className="copyright">
+            <p>Copyright &copy; {(new Date().getFullYear())} Fiori Stori.</p>
+            <p>By <a href="https://www.webjeweler.lt">Webjeweler</a></p>
+        </div>
+</div>
 )
 
 export default Footer;
