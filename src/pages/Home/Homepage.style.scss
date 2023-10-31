@@ -16,15 +16,14 @@ section {
     // width: 90%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    // grid-gap: 10px;
     align-items: center;
-    margin: 0 0 2rem;
+    margin: 4rem 0 2rem;
 
     @include breakpoint(large) {
         // width: 80%;
         // max-width: 1170px;
-        grid-template-columns:repeat(2, 1fr);
-        // grid-gap: 50px 30px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .right {
@@ -32,10 +31,14 @@ section {
         background-color: var(--color-primary-light);
 
         img {
-            width: 40%;
+            min-width: 70%;
+            height: 50vh;
             object-fit: cover;
+            object-position: 100% 45%;
             @include rounded-upper-corners;
             margin: 3rem 0 3rem;
+            outline: var(--main-bg-color) 10px solid;
+            // outline-offset: 10px;
         }
         
     }
@@ -43,10 +46,11 @@ section {
     .left {
         display: flex;
         text-align: justify;
+        background-color: var(--color-primary-light);
 
         .content {
             padding: 30px;
-
+            background-color: var(--main-bg-color);
             @include breakpoint(medium) {
                 padding: 20px 3rem 20px 6rem;
             }
