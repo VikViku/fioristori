@@ -35,21 +35,21 @@ const HomePage = () => {
                 <div>
                     <div className="bg-image one"></div>
                     <div className="overlay">
-                        <p>Vestuvių dekoravimas ir floristika</p>
+                        <p><span>Vestuvių dekoravimas</span> <span>ir floristika</span></p>
                         <button>Daugiau</button>
                     </div>
                 </div>
                 <div>
                 <div className="bg-image two"></div>
                     <div className="overlay">
-                        <p>Asmeninių švenčių dekoravimas ir floristika</p>
+                        <p><span>Asmeninių švenčių</span> <span>dekoravimas ir floristika</span></p>
                         <button>Daugiau</button>
                     </div>
                 </div>
                 <div>
                 <div className="bg-image three"></div>
                     <div className="overlay">
-                        <p>Bažnyčios, ceremonijos vietos dekoravimas ir floristika</p>
+                        <p><span>Bažnyčios, ceremonijos vietos</span> <span>dekoravimas ir floristika</span></p>
                         <button>Daugiau</button>
                     </div>
                 </div>
