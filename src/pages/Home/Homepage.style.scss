@@ -120,13 +120,13 @@ section {
 
 .paslaugos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    width: 90%;
+    width: 80%;
 
     div {
         position: relative;
-        height: 300px;
+        height: 250px;
         @include rounded-upper-corners;
 
         p {
@@ -226,11 +226,13 @@ section {
         grid-template-columns: 1fr;
     }
 }
-.aaaa {
-    background-color: var(--color-primary-light);
-    width: 100%;
-    margin: 6.5rem 0 1.5rem;
-    height: 70%;
+.wrapper {
+    @include breakpoint(large) {
+        background-color: var(--color-primary-light);
+        width: 100%;
+        margin: 6.5rem 0 1.5rem;
+        height: 70%;
+    }
 }
 .galerija {
     padding: 10px 10px 1.5rem 10px;

@@ -1,4 +1,4 @@
-import styles from "./Testimonial.module.css";
+import styles from "./Testimonial.module.scss";
 import React, { useEffect, useRef, useState } from "react";
 
 const TESTIMONIAL_DELAY = 3000;
