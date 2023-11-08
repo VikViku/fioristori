@@ -3,14 +3,14 @@
       @media (min-width: 64.375em) { @content; }
     }
     @else if $point == medium {
-      @media (min-width: 50em) { @content; }
+      @media (min-width: 72em) { @content; }
     }
     @else if $point == small {
       @media (min-width: 37.5em)  { @content; }
     }
   }
 
-@mixin rounded-upper-corners {
+@mixin boxShadow {
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  border-radius:75px 75px 0 0;
+  // border-radius:75px 75px 0 0;
 }
