@@ -6,11 +6,10 @@
     justify-items: center;
     row-gap: 1rem;
     font-weight: 200;
-
-    @include breakpoint(medium) {
-      max-width: 60%;
+    margin: 0 auto;
+    @include breakpoint(small) {
+      max-width: 50%;
     }
-
   }
 
   .quotes-img-right span:before {
@@ -35,6 +34,7 @@
     @include boxShadow;
     background-color: #ffffff;
     padding: 1.5rem;
+    max-width: 80%;
   }
  
   .quotes-img {

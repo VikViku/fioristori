@@ -38,7 +38,6 @@ const HomePage = () => {
             <FadeInSection>
                 <Heading title="Paslaugos"/>
                 <section className="paslaugos">
-                    
                     <div>
                         <div className="bg-image one"></div>
                         <div className="overlay">
@@ -91,7 +90,7 @@ const HomePage = () => {
 
             <FadeInSection>
                 <Heading title="Galerija"/>
-                <div className="wrapper">
+                <div className='wrapper'>
                     <section className="galerija">
                         <div className="galerija__item galerija__item--1">
                             <img src={paslaugos1} alt="1"/>
