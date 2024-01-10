@@ -21,9 +21,7 @@ section {
     margin: 0 0 2rem;
 
     @include breakpoint(large) {
-        // width: 80%;
-        // max-width: 1170px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 2fr 1.5fr;
     }
 
     .right {
@@ -31,10 +29,10 @@ section {
         background-color: var(--color-primary-light);
 
         img {
-            min-width: 70%;
+            // min-width: 70%;
             height: 50vh;
             object-fit: cover;
-            object-position: 100% 45%;
+            // object-position: 100% 45%;
             @include boxShadow;
             margin: 2rem 0 2rem;
             outline: var(--main-bg-color) 10px solid;
@@ -49,7 +47,7 @@ section {
 
     .left {
         display: flex;
-        text-align: justify;
+        text-align: center;
 
         .content {
             padding: 30px;
@@ -60,6 +58,7 @@ section {
             p {
                 // font-size: 16px;
                 line-height: 20px;
+                text-align: justify;
                 // padding-bottom: 15px;
             }
 
@@ -133,7 +132,7 @@ section {
         @include boxShadow;
 
         p {
-            font-family: var(--heading-font);
+            // font-family: var(--heading-font);
             line-height: 1rem;
             padding-top: 15px;
             margin-bottom: 15px;
@@ -144,6 +143,10 @@ section {
 
         }
 
+        button {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
         .bg-image {
             transition: all 0.3s;
             transform: scale(1);
@@ -196,33 +199,6 @@ section {
                 filter: blur(1px);
                 transform: scale(1.1);
             }
-            button {
-                background: var(--color-accent);
-                border: 1px solid var(--color-accent);
-                border-radius: 6px;
-                box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-                box-sizing: border-box;
-                color: #FFF;
-                cursor: pointer;
-                line-height: 16px;
-                min-height: 40px;
-                outline: 0;
-                padding: 12px 14px;
-                text-align: center;
-                text-rendering: geometricprecision;
-                text-transform: uppercase;
-
-                &:hover,
-                &:active {
-                    background-color: initial;
-                    background-position: 0 0;
-                    color: var(--color-accent);
-                }
-    
-                &:active {
-                    opacity: .5;
-                }
-            }
 
         }
     }
@@ -237,6 +213,7 @@ section {
     @include breakpoint(large) {
         background-color: var(--color-primary-light);
         width: 100%;
+
     }
 }
 section.galerija {

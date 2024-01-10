@@ -49,7 +49,7 @@ const Footer = () => (
         </footer>
 
         <div className="copyright">
-            <p>Copyright &copy; {(new Date().getFullYear())} Fiori Stori.</p>
+            <p>Copyright &copy; {(new Date().getFullYear())} FioriStori.</p>
             <p>By <a href="https://www.webjeweler.lt">Webjeweler</a></p>
         </div>
 </div>

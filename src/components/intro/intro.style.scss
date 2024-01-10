@@ -10,14 +10,14 @@
     background-color:#333;
 
     h1 {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        color: var(--color-primary-light);
-        font-size: 1.2rem;
-        font-weight: 400;
-        background-color: rgb(0, 0, 0, 0.4);
-        padding: 25px;
+        // position: absolute;
+        // top: 50%;
+        // left: 0;
+        // color: var(--color-primary-light);
+        // font-size: 1.2rem;
+        // font-weight: 400;
+        // background-color: rgb(0, 0, 0, 0.4);
+        // padding: 25px;
         // height: 70vb;
 
         // opacity: 0;
@@ -27,13 +27,13 @@
         //         animation: reveal 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
 
         @include breakpoint(medium) {
-            left: 25%;
+            // left: 25%;
         }
 
         @include breakpoint(large) {
-            font-size: 2rem;
+            // font-size: 2rem;
             // height: 30vb;
-            left: 38%;
+            // left: 38%;
         }
     }
 

@@ -30,7 +30,7 @@ const Slider =  props => {
     return (
         <div className="slider2">
             <div style={bgImageStyle}></div>
-            <div className="transparent-background"></div>
+            {/* <div className="transparent-background"></div> */}
             <div className="description">
                 <div>
                     {/* <h1>{imageSlider[currentState].title}</h1>

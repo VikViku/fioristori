@@ -8,3 +8,34 @@ h2 {
 h3 {
     font-size: 1rem;
 }
+
+.green-button {
+    background: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFF;
+    cursor: pointer;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    &:hover,
+    &:active {
+        background-color: initial;
+        background-position: 0 0;
+        color: var(--color-accent);
+    }
+
+    &:active {
+        opacity: .5;
+    }
+}

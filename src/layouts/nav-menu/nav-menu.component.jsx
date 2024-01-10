@@ -16,7 +16,7 @@ const NavMenu = () => {
             <label htmlFor="nav-toggle" className="burger-menu">
                 <span className="burger-icon">&nbsp;</span>
             </label>
-            <Link to="/" className="logo">FIORI STORI</Link>
+            <Link to="/" className="logo">FIORISTORI</Link>
             <ul className="menu">
                 <li><Link to="/paslaugos">Paslaugos</Link></li>
                 <li><Link to="/nuoma">Nuoma</Link></li>
@@ -29,9 +29,9 @@ const NavMenu = () => {
                 (<FontAwesomeIcon icon={faCaretDown}/>)}</Link>
                     <div className="dropdown">
                         <ul>
-                            <li><Link to="/Galerija">Vestuvės</Link></li>
-                            <li><Link to="/Galerija">Krikštynos ir gimtadieniai</Link></li>
-                            <li><Link to="/Galerija">Kitos šventės</Link></li>
+                            <li><Link to="/galerija">Vestuvės</Link></li>
+                            <li><Link to="/galerija">Krikštynos ir gimtadieniai</Link></li>
+                            <li><Link to="/galerija">Kitos šventės</Link></li>
                         </ul>
                     </div>
                 </li>

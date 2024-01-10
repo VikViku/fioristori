@@ -1,4 +1,5 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 import Intro from '../../components/intro/intro.component';
 import Heading from '../../components/heading/heading.component';
@@ -14,6 +15,20 @@ import feedback from "../../data/feedback.json";
 import FadeInSection from '../../components/fadeInSection/fade-in-section.component';
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
+    const navigateApie = () => {
+        navigate('/apie-mane');
+    };
+
+    const navigateGalerija = () => {
+        navigate('/galerija');
+    };
+
+    const navigatePaslaugos = () => {
+        navigate('/paslaugos');
+    };
+
 
     return (
         <main>
@@ -27,6 +42,7 @@ const HomePage = () => {
                             <p>Gėlės man yra gražiausia puošmena šventėje, o jei jas papildo spalviškai suderinta tekstilė, žvakės, vazelės, tuomet ir sukuriama nuostabi šventės atmosfera. Gėlės kuria emociją, kuri liks ilgam ne tik Jūsų prisiminimuose, bet ir nuotraukose.</p>
                             <p>Mano pagrindinė misija – padėti žmonėms sukurti įsimintinas jų švenčių istorijas. Kiekviena šventė yra individuali, todėl galutinis rezultatas niekada nebūna pasikartojantis. Kiekvieną šventę puošiu su didele meile ir atsidavimu.</p>
                             <p>Jei dar neradote savo šventės (vestuvių, gimtadienio, krikštynų, įmonės vakarėlio ir t. t.) dekoratoriaus ar floristo, pasikalbėkime ir aš mielai įgyvendinsiu jūsų šventės viziją.</p>
+                            <button className="green-button" onClick={navigateApie}>Daugiau</button>
                         </div>
                     </div>
                     <div className="right">
@@ -38,60 +54,59 @@ const HomePage = () => {
             <FadeInSection>
                 <Heading title="Paslaugos"/>
                 <section className="paslaugos">
-                    
                     <div>
                         <div className="bg-image one"></div>
                         <div className="overlay">
                             <p><span>Vestuvių dekoravimas</span> <span>ir floristika</span></p>
-                            <button>Daugiau</button>
+                            <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
                     <div>
                     <div className="bg-image two"></div>
                         <div className="overlay">
                             <p><span>Asmeninių švenčių</span> <span>dekoravimas ir floristika</span></p>
-                            <button>Daugiau</button>
+                            <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
                     <div>
                     <div className="bg-image three"></div>
                         <div className="overlay">
                             <p><span>Bažnyčios, ceremonijos vietos</span> <span>dekoravimas ir floristika</span></p>
-                            <button>Daugiau</button>
+                            <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
                     <div>
                     <div className="bg-image four"></div>
                         <div className="overlay">
                             <p>Dekoracijų nuoma</p>
-                            <button>Daugiau</button>
+                            <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
                     <div>
                     <div className="bg-image five"></div>
                         <div className="overlay">
                             <p>Jaunosios puokštės</p>
-                            <button>Daugiau</button>
+                            <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
                     <div>
                     <div className="bg-image six"></div>
                         <div className="overlay">
                             <p>Sveikinimų puokštės</p>
-                            <button>Daugiau</button>
+                            <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
                 </section>
             </FadeInSection>
 
             <FadeInSection>
-            <Heading title="Dekoracijų nuoma"/>
+                <Heading title="Dekoracijų nuoma"/>
                 <section>3</section>
             </FadeInSection>
 
             <FadeInSection>
                 <Heading title="Galerija"/>
-                <div className="wrapper">
+                <div className='wrapper'>
                     <section className="galerija">
                         <div className="galerija__item galerija__item--1">
                             <img src={paslaugos1} alt="1"/>
@@ -137,6 +152,7 @@ const HomePage = () => {
                         </div>*/}
                     </section>
                 </div>
+                <button className="green-button" onClick={navigateGalerija}>Daugiau</button>
             </FadeInSection>
 
             <FadeInSection>
