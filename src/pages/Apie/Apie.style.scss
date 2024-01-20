@@ -1,3 +1,59 @@
+
+@import '../../assets/styles/mixins';
+
 .Apie {
-    margin: auto;
+    margin: 2% 10% 2%;
+
+    .item-holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    
+        @include breakpoint(large) {
+            grid-template-columns: 1.5fr 1.5fr;
+        }
+    
+        .right {
+            overflow: hidden;
+            background-color: var(--color-primary-light);
+    
+            img {
+                height: 50vh;
+                @include boxShadow;
+                margin: 2rem 0 2rem;
+                outline: var(--main-bg-color) 10px solid;
+    
+                @include breakpoint(medium) {
+                    margin: 6rem 0 2rem;
+                }
+            }
+            
+        }
+    
+        .left {
+            display: flex;
+            text-align: center;
+    
+            .content {
+                padding: 30px;
+                line-height: 20px;
+                text-align: justify;
+                @include breakpoint(medium) {
+                    padding: 20px 3rem 20px 6rem;
+                }
+    
+                p:first-of-type {
+                    padding-top: 15px;
+                    &::first-letter {
+                        color: var(--color-primary-dark);
+                        font-family: var(--heading-font);
+                        padding: 8px;
+                    
+                        -webkit-initial-letter: 3;
+                        initial-letter: 3;
+                    }
+                }
+            }
+        }
+    }
 }

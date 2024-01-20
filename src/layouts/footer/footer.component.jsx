@@ -4,13 +4,18 @@ import './footer.style.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faHome, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faHome, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => (
     <div>
         <footer className="footer">
             <Link to="/" className="footer__logo">
                 <img alt="logo"></img>
+
+                <div className="copyright">
+                    <p>Copyright &copy; {(new Date().getFullYear())} FioriStori.</p>
+                    <p>By <a href="https://www.webjeweler.lt">Webjeweler</a></p>
+                </div>
             </Link>
 
             <div className="footer__links">
@@ -47,11 +52,6 @@ const Footer = () => (
             </div> */}
 
         </footer>
-
-        <div className="copyright">
-            <p>Copyright &copy; {(new Date().getFullYear())} FioriStori.</p>
-            <p>By <a href="https://www.webjeweler.lt">Webjeweler</a></p>
-        </div>
 </div>
 )
 

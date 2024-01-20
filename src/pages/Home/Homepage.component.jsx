@@ -22,7 +22,7 @@ const HomePage = () => {
     };
 
     const navigateGalerija = () => {
-        navigate('/galerija');
+        navigate('/galerija/vestuves');
     };
 
     const navigatePaslaugos = () => {
@@ -37,11 +37,9 @@ const HomePage = () => {
                 <section className="item-holder2">
                     <div className="left">
                         <div className="content">
-                            <Heading title="Apie mane" sub="įkūrėjos žodis"/>
+                            <Heading title="Apie mane"/>
                             <p>Esu Vida, <i>FioriStori</i> įkūrėja, dekoratorė, floristė. Esu didelė gėlių mylėtoja ir tikiu jų galia, todėl kuriant šventės dekorą didelį dėmesį skiriu gėlių kompozicijoms, rūšims, spalvų derinimui.</p>
                             <p>Gėlės man yra gražiausia puošmena šventėje, o jei jas papildo spalviškai suderinta tekstilė, žvakės, vazelės, tuomet ir sukuriama nuostabi šventės atmosfera. Gėlės kuria emociją, kuri liks ilgam ne tik Jūsų prisiminimuose, bet ir nuotraukose.</p>
-                            <p>Mano pagrindinė misija – padėti žmonėms sukurti įsimintinas jų švenčių istorijas. Kiekviena šventė yra individuali, todėl galutinis rezultatas niekada nebūna pasikartojantis. Kiekvieną šventę puošiu su didele meile ir atsidavimu.</p>
-                            <p>Jei dar neradote savo šventės (vestuvių, gimtadienio, krikštynų, įmonės vakarėlio ir t. t.) dekoratoriaus ar floristo, pasikalbėkime ir aš mielai įgyvendinsiu jūsų šventės viziją.</p>
                             <button className="green-button" onClick={navigateApie}>Daugiau</button>
                         </div>
                     </div>
@@ -57,21 +55,21 @@ const HomePage = () => {
                     <div>
                         <div className="bg-image one"></div>
                         <div className="overlay">
-                            <p><span>Vestuvių dekoravimas</span> <span>ir floristika</span></p>
+                            <p><span>Vestuvių dekoras</span> <span>ir floristika</span></p>
                             <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
                     <div>
                     <div className="bg-image two"></div>
                         <div className="overlay">
-                            <p><span>Asmeninių švenčių</span> <span>dekoravimas ir floristika</span></p>
+                            <p><span>Asmeninių švenčių</span> <span>dekoras ir floristika</span></p>
                             <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
                     <div>
                     <div className="bg-image three"></div>
                         <div className="overlay">
-                            <p><span>Bažnyčios, ceremonijos vietos</span> <span>dekoravimas ir floristika</span></p>
+                            <p><span>Įmonių, renginių, biurų,</span> <span>vitrinų dekoras</span></p>
                             <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
@@ -92,7 +90,7 @@ const HomePage = () => {
                     <div>
                     <div className="bg-image six"></div>
                         <div className="overlay">
-                            <p>Sveikinimų puokštės</p>
+                            <p>Sveikinimo puokštės</p>
                             <button className="green-button" onClick={navigatePaslaugos}>Daugiau</button>
                         </div>
                     </div>
@@ -151,8 +149,9 @@ const HomePage = () => {
                             <img src={paslaugos1} alt="14"/>
                         </div>*/}
                     </section>
+                    <button className="green-button" onClick={navigateGalerija}>Daugiau</button>
                 </div>
-                <button className="green-button" onClick={navigateGalerija}>Daugiau</button>
+
             </FadeInSection>
 
             <FadeInSection>

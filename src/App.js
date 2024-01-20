@@ -20,7 +20,8 @@ const App = () => (
       <Route path="/nuoma" element={<Nuoma />} />
       <Route path="/atsiliepimai" element={<Atsiliepimai />} />
       <Route path="/apie-mane" element={<Apie />} />
-      <Route path="/galerija" element={<Galerija />} />
+      <Route exact path="/galerija" element={<Galerija />} />
+        <Route path="galerija/:kategorija" element={<Galerija />} />
       <Route path="/kontaktai" element={<Kontaktai />} />
     </Routes>
     <Footer/>

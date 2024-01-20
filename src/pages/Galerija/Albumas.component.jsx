@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Outlet, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import MainGallery from "./MainGallery.component";
 import CategoryMenu from "./CategoryMenu.component";
@@ -9,14 +9,14 @@ import Heading from '../../components/heading/heading.component';
 
 import './Galerija.style.scss';
 
-const Galerija = () => {
+const Albumas = ({ images }) => {
 
     const { kategorija } = useParams();
 
-    const categories = galleryData.filter((image) => image.category === kategorija);
-console.log(categories);
-    const [activeCategory, setActiveCategory] = useState(kategorija);
-    console.log(activeCategory); 
+    const categories = [...new Set(galleryData.map((image) => image.category))];
+
+    const [activeCategory, setActiveCategory] = useState(categories[0]);
+    
     const handleSelectCategory = (category) => {
       setActiveCategory(category);
     };
@@ -28,17 +28,16 @@ console.log(categories);
     return (
         <>
         <Heading title={kategorija}/>
-
-        <div className="Galerija">
-            {/* <CategoryMenu
-                categories={categories}
-                activeCategory={activeCategory}
-                onSelectCategory={handleSelectCategory} 
-            /> */}
-                {/* <MainGallery images={filteredImages} /> */}
-        </div>
+      <div className="Galerija">
+            <CategoryMenu
+            categories={categories}
+            activeCategory={activeCategory}
+            onSelectCategory={handleSelectCategory} 
+            />
+            <MainGallery images={filteredImages} />
+      </div>
       </>
     );
 };
 
-export default Galerija;
+export default Albumas;

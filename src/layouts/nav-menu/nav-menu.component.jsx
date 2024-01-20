@@ -9,6 +9,7 @@ import './nav-menu.style.scss';
 
 const NavMenu = () => {
     const [isHovered, setIsHovered] = useState(false);
+    const galleryCategories = ["vestuves", "krikštynos", "kita"];
 
     return (
         <nav>
@@ -29,9 +30,9 @@ const NavMenu = () => {
                 (<FontAwesomeIcon icon={faCaretDown}/>)}</Link>
                     <div className="dropdown">
                         <ul>
-                            <li><Link to="/galerija">Vestuvės</Link></li>
-                            <li><Link to="/galerija">Krikštynos ir gimtadieniai</Link></li>
-                            <li><Link to="/galerija">Kitos šventės</Link></li>
+                            <li><Link to={`/galerija/${galleryCategories[0]}`}>Vestuvės</Link></li>
+                            <li><Link to={`/galerija/${galleryCategories[1]}`}>Krikštynos ir gimtadieniai</Link></li>
+                            <li><Link to={`/galerija/${galleryCategories[2]}`}>Kitos šventės</Link></li>
                         </ul>
                     </div>
                 </li>
