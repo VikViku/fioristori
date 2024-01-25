@@ -9,7 +9,7 @@ import './nav-menu.style.scss';
 
 const NavMenu = () => {
     const [isHovered, setIsHovered] = useState(false);
-    const galleryCategories = ["vestuves", "krikštynos", "kita"];
+    const galleryCategories = ["vestuves", "krikstynos", "kita"];
 
     return (
         <nav>

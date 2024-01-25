@@ -1,6 +1,6 @@
 import React,  { useRef, useEffect } from "react";
 
-const CategoryMenu = ({ categories, activeCategory, onSelectCategory }) => {
+const CategoryMenu = ({ topics, activeTopic, onSelectTopic }) => {
     const submenuRef = useRef(null);
 
     const handleScroll = () => {
@@ -24,17 +24,18 @@ return (
     <div className="submenu-wrapper">
 
     <div className="submenu" ref={submenuRef} id="id">
-        {categories.map((category, index) => (
+        {topics.map((topic, index) => 
             <button
-                key={category}
-                onClick={() => onSelectCategory(category, index)}
-                className={`category-button ${category === activeCategory ? "active" : ""} ${
-                index > categories.indexOf(activeCategory) ? "category-at-right" : "category-at-left"
-            }`}
-            >
-                {category}
+                key={topic.id}
+                onClick={() => onSelectTopic(topic.id, index)}
+                className={`category-button ${topic.id === activeTopic ? "active" : ""} ${
+                index > topics.indexOf(activeTopic) ? "category-at-right" : "category-at-left"
+        }`}
+        >
+            {topic.topic}
             </button>
-        ))}
+
+        )}
     </div>
     </div>
     );

@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Gallery = ({ images }) => {
+const Gallery = ({ topicList, activeTopic}) => {
+
+  const topics = topicList.filter((el) => el.id === activeTopic)[0];
+  console.log("topicList", topicList);
+  console.log("activeTopic", activeTopic);
+
     return (
       <div className="gallery">
-        {images.list.map((image) => (
+        {topics.list.map((image) => (
           <img key={image.id} src={image.imageUrl} alt={`Img ${image.id}`} />
         ))}
       </div>
