@@ -4,6 +4,7 @@ import lp01 from '../assets/galerija/kita/paslaugos_3.jpeg';
 
 const galleryData = [
   {
+    id: 1,
     category: "vestuves",
     topicList: [
       {
@@ -26,6 +27,7 @@ const galleryData = [
     ]
   },
   {
+    id: 2,
     category: "krikstynos",
     topicList: [
       { 
@@ -48,6 +50,7 @@ const galleryData = [
     ]
   },
   {
+    id: 3,
     category: "kita",
     topicList: [
       {

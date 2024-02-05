@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -30,9 +30,6 @@ const Galerija = () => {
     const handleSelectTopic = (topic) => {
         setActiveTopic(topic);
     };
-    useEffect(() => {
-        setActiveTopic(defaultTopic);
-    }, [kategorija]);
     
     return (
         <>
@@ -44,8 +41,8 @@ const Galerija = () => {
                 activeTopic={activeTopic}
                 onSelectTopic={handleSelectTopic}
             />
-                <MainGallery topicList={category.topicList}
-                activeTopic={defaultTopic}/>
+                <MainGallery category={category}
+                activeTopic={activeTopic}/>
         </div>
       </>
     );
