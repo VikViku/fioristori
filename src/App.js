@@ -10,6 +10,7 @@ import Apie from './pages/Apie/Apie.component';
 import Galerija from './pages/Galerija/Galerija.component';
 import Kontaktai from './pages/Kontaktai/Kontaktai.component';
 import Footer from './layouts/footer/footer.component';
+import RentDetails from "./pages/Nuoma/RentDetails.component";
 
 const App = () => (
   <div className='App'>
@@ -18,6 +19,7 @@ const App = () => (
       <Route path="/" element={<HomePage />} />
       <Route path="/paslaugos" element={<Paslaugos />} />
       <Route path="/nuoma" element={<Nuoma />} />
+        <Route path="nuoma/:tipas" element={<RentDetails/>} />
       <Route path="/atsiliepimai" element={<Atsiliepimai />} />
       <Route path="/apie-mane" element={<Apie />} />
       <Route exact path="/galerija" element={<Galerija />} />
