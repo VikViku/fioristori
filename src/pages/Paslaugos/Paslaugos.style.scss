@@ -21,7 +21,7 @@
 
         @include breakpoint(medium) {
             grid-template-columns: repeat(3, minmax(300px, 1fr));
-            grid-template-rows: 50px 600px;
+            grid-template-rows: auto 400px;
         }
 
         div {
