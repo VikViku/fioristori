@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import './Nuoma.style.scss';
+import Heading from '../../components/heading/heading.component';
 
 const Nuoma = () => (
     <div className="Nuoma">
+    <Heading title="Nuoma"/>
     <button class="action-button" role="button">Nuomos sąlygos</button>
 
     <div className="renting">

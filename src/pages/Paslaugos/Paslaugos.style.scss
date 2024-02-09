@@ -1,3 +1,85 @@
+@import '../../assets/styles/mixins';
+
 .Paslaugos {
-    margin: auto;
+    display: grid;
+    // align-items: center;
+    // grid-template-rows: 50px auto;
+    row-gap: 2px;
+    margin: 2rem auto;
+
+    // button {
+    //     justify-self: start;
+    //     align-self: center;
+    // }
+
+    .services {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+        gap: 15px;
+
+        @include breakpoint(medium) {
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
+            grid-template-rows: 50px 600px;
+        }
+
+        div {
+            width: 300px;
+            height: 200px;
+
+            .bg-image {
+
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+                opacity: 1;
+                @include boxShadow;
+                
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                &.one {
+                    background: url(../../assets/images/paslaugos_1.jpeg) 50% 50% no-repeat;
+                    background-size: 100%;
+                }
+                &.two {
+                    background: url(../../assets/images/paslaugos_4.jpeg) 50% 50% no-repeat;
+                    background-size: 100%;
+                }
+                &.three {
+                    background: url(../../assets/images/paslaugos_3.jpeg) 50% 50% no-repeat;
+                    background-size: 100%;
+                }
+    
+                &.four {
+                    background: url(../../assets/images/paslaugos_2.jpeg) 50% 50% no-repeat;
+                    background-size: 100%;
+                }
+                &.five {
+                    background: url(../../assets/images/paslaugos_5.jpeg) 50% 50% no-repeat;
+                    background-size: 100%;
+                }
+                &.six {
+                    background: url(../../assets/images/paslaugos_6.jpeg) 50% 50% no-repeat;
+                    background-size: 100%;
+                }
+            }       
+        
+            p {
+                line-height: 1rem;
+                text-transform: uppercase;
+            }
+        
+        }
+    }
+}
+
+.Details {
+    display: grid;
+    row-gap: 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    align-content: center;
+    justify-content: center;
 }

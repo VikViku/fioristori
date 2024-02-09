@@ -1,3 +1,29 @@
+@import '../../assets/styles/mixins';
+
 .Atsiliepimai {
-    margin: auto;
+    display: grid;
+    grid-template-rows: 50px auto;
+    row-gap: 2rem;
+    margin: 2rem auto;
+
+    .testimonials {
+        display: grid;
+        justify-content: center;
+        
+        gap: 15px;
+
+        @include breakpoint(medium) {
+            grid-template-columns: repeat(4, minmax(300px, 1fr));
+        }
+
+        // div {
+        //     width: 500px;
+        //     height: auto;
+        //     // background-color: var(--color-primary-light);
+        //     border: 3px solid var(--color-primary-dark);
+        //     border-radius: 20px;;
+            
+
+        // }
+    }
 }

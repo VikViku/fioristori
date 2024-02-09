@@ -11,6 +11,7 @@ import Galerija from './pages/Galerija/Galerija.component';
 import Kontaktai from './pages/Kontaktai/Kontaktai.component';
 import Footer from './layouts/footer/footer.component';
 import RentDetails from "./pages/Nuoma/RentDetails.component";
+import ServiceDetails from "./pages/Paslaugos/ServiceDetails.component";
 
 const App = () => (
   <div className='App'>
@@ -18,6 +19,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/paslaugos" element={<Paslaugos />} />
+        <Route path="/paslaugos/vestuviu-dekoras" element={<ServiceDetails />} />
       <Route path="/nuoma" element={<Nuoma />} />
         <Route path="nuoma/:tipas" element={<RentDetails/>} />
       <Route path="/atsiliepimai" element={<Atsiliepimai />} />
