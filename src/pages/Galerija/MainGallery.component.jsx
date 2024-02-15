@@ -13,7 +13,7 @@ const Gallery = ({ category, activeTopic }) => {
     return (
       <div className="gallery">
           {topics.list.map((image) => (
-            <img key={image.id} src={image.imageUrl} alt={`Img ${image.id}`} />
+              <img key={image.id} src={image.imageUrl} alt={`Img ${image.id}`} />
           ))}
       </div>
     );
